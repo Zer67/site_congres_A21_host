@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/273d109a90780d8fe7bbe69817a67397?family=betterfly');
+
+:root{
+  --text-color: 'Anton', sans-serif;
+  --ff-main: 'BetterFly', sans-serif;
+  --ff-title: 'Fjalla One', sans-serif;
+  --menu-color: blanchedalmond;
+}
+
+html{
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+body{
+    font-family: var(--ff-title);
+    background: rgb(69, 69, 181);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.data-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-image img {
+    display: block;
+    max-width: 100%;
+}
+
+.image img {
+    display: block;
+    max-height: 100%;
+    min-width: 100%;
+    width: 90vw;
+    object-fit: contain;
+}
+
+main {
+    max-width: 3840px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    /* box-shadow: 30px 0 40px rgba(0,0,0,0.1), -30px 0 40px rgba(0,0,0,0.1); */
+}
+
+.main-content-flex, .main-text-img,.caption, footer {
+    text-align: center;
+}
+
+/* Classes CSS */
+
+/* Contenu du header */
+
+.main-image {
+    width: 20%;
+    height: 20%;
+}
+
+.main-content {
+    display: flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(68,68,180,1) 100%);
+    height: 50vh;
+}
+
+.main-content-flex {
+    display: flex;
+    flex-direction: column;
+
+    height: 20vh;
+    width: 100vw;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenu de la page */
+
+.rubrique {
+    /*border:dashed red;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 1vw;
+    width: 95%;
+    height: 40%;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Trois datas (ou plus) données en début de page */
+
+.data {
+    width: 65%;
+    margin: auto;
+}
+
+.data-image, .data-text
+{
+  flex-grow: 1;
+}
+
+.data-image {
+    background: #9C9CD0;
+    padding: 10px;
+}
+
+.data-text {
+    font-weight: bold;
+    padding: 12px;
+    color: #F0D270;
+}
+
+/* Contenu d'une rubrique dite "classique" */
+
+.image, .texte
+{
+  flex-grow: 1;
+}
+
+.image {
+    padding: 10px;
+    background: #716cc5;
+}
+
+.texte {
+    margin: 12px;
+    background: #9C9CD0;
+    padding: 7px;
+}
+
+/* Menu flottant */
+
+.titre-menu {
+    color: var(--text-color);
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+menu {
+    /* position: -webkit-sticky; */
+    position: fixed;
+    top: 2.5vh;
+    right: 1vh;
+}
+
+menu-container menu {
+    display: none;
+}
+
+menu-container:hover menu {
+    display: block;
+}
+
+menu ul { 
+    padding: 1vw;
+    list-style-type: none;
+    background-color: rgb(15,57,194);;
+    color: var(--menu-color);
+}
+
+menu>ul>li{
+    width: 100%;
+    height: unset;
+    margin: auto;
+    align-items: center;
+    padding: 10px;
+}
+
+menu>ul>li:hover {
+    background-color: var(--menu-color);
+    color: black;
+}
+
+menu a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Icone menu */
+
+.carre {
+    height: 5vh;
+    width: 5vh;
+    background-color: rgb(15,57,194);
+    padding: 5%;
+    display: block;
+    border-radius: 0.3em;
+}
+
+.carre .rect {
+    margin: 10%;
+    background-color: #F0D270;
+    height: 20%;
+    border-radius: 0.1em;
+}
+
+
+/* Medias querries : Utilisées pour le contenu sur un écran de pc */
+
+@media (min-width: 750px) {
+
+    /* Contenu du header */
+    .main-content {
+        display: flex;
+        height: 100vh;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(68,68,180,1) 100%);
+        margin:80px auto auto auto;
+    }
+    .main-content-flex {
+        height: 0;
+
+    }
+    /* Contenu de la page */
+    .rubrique {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 2vh;
+        width: 95%;
+        height: 40%;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* Trois datas (ou plus) données en début de page */
+
+    .data {
+        width: 20%;
+    }
+    /* Contenu d'une rubrique dite "classique" */
+    .image img {
+        width: 40vw;
+    }
+
+    .texte {
+        height: 100%;
+    }
+    menu-container menu {
+        display: unset;
+    }
+
+    /* Menu flottant */
+    .titre-menu {
+        display: none;
+    }
+
+    menu {
+        display: unset;
+        top:0px;
+        margin:0px;
+        width: 100%;
+    }
+
+    menu ul {
+        padding: 10px;
+        text-align: center;
+        width: unset;
+        height: 90%vh;
+        background-color: rgb(27,52,134);
+        margin-top: 0;
+
+
+    }
+
+    menu a {
+        color: var(--menu-color);
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    menu>ul>li{
+        display: inline-flex;
+        width: unset;
+        height: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    menu>ul>li:hover {
+        background-color: var(--menu-color);
+        color: black;
+    }
+
+
+}
