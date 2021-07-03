@@ -17,12 +17,12 @@ menu {
 menu-container menu {
     display: none;
 }
-
+/*
 menu-container:hover menu {
     display: block;
 }
-
-menu ul {
+*/
+menu ul { 
     padding: 1vw;
     list-style-type: none;
     background: linear-gradient(#4742b4, #ffd248);
