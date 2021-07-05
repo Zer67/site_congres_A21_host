@@ -30,11 +30,6 @@
   --download-color: #764981;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-}
-
 html{
   box-sizing: border-box;
   color: var(--text-color);
@@ -251,6 +246,14 @@ img{
   background-color: #4742b4;
 }
 
+.event-bottom-left:hover {
+  border-bottom-left-radius: 18px;
+}
+
+.event-bottom-right:hover {
+  border-bottom-right-radius: 18px;
+}
+
 
 .event{
   border-radius: 90px;
@@ -353,7 +356,7 @@ img{
 
   .main-title{
     font-family: var(--ff-main);
-    text-align: center
+    text-align: center;
     margin: auto;
   }
 
