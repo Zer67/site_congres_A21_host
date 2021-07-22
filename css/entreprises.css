@@ -46,7 +46,7 @@ footer h3 {
 }
 
 footer hr {
-    width: 20%;
+    width: 15rem;
     color:rgb(184, 179, 179);
     margin: .5rem auto;
 }
@@ -55,10 +55,13 @@ footer p{
   text-transform: none;
 }
 
-.footer-text{
-  font-weight: bold;
+footer a{
+  color: var(--text-color);
   text-transform: none;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
+
 
 .button{
   display: inline-block;
@@ -87,7 +90,7 @@ footer p{
   color: white;
   padding-top: 20vh;
   padding-bottom: 15vh;
-  background-color: var(--second-grey);
+  background-color: #666;
   background-image: url(../images/main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -123,7 +126,7 @@ footer p{
 }
 
 .intro .content{
-  flex: 1 1 40rem;
+  flex: 1 1 30rem;
   text-align: center;
 }
 
@@ -159,7 +162,7 @@ footer p{
 }
 
 .intro .image{
-  flex: 1 1 20rem;
+  flex: 1 1 15rem;
  padding-right: 0rem;
 }
 
@@ -169,7 +172,7 @@ footer p{
   object-fit: cover;
   border: .5rem solid #fff;
   border-radius: .5rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 .background2{
@@ -187,7 +190,7 @@ footer p{
 }
 
 .background2 .split .image{
-  flex: 1 1 20rem;
+  flex: 1 1 17rem;
 }
 
 /*.background2 .keys-container{
@@ -223,7 +226,7 @@ footer p{
   object-fit: cover;
   border: .5rem solid #fff;
   border-radius: .5rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 .background2 .split .content{
@@ -409,11 +412,11 @@ footer p{
   height: 20vh;
   flex-grow: 1;
   margin: auto;
-  border-top: solid #BDBDBD;
+  border-top: solid var(--second-grey);
 }
 
 .event-block2 + .event-block2{
-  border-left: solid #BDBDBD;
+  border-left: solid var(--second-grey);
 }
 
 .event-block2 .hour-text{
@@ -428,7 +431,7 @@ footer p{
 
 .event-block:active {
   color: black;
-  background-color: #4742b4;
+  background-color: var(--blue-logo);
 }
 
 .event-bottom-left:hover {
@@ -462,6 +465,11 @@ footer p{
   margin-left: .5rem;
 }
 
+
+.faq{
+  margin-bottom: 3rem;
+}
+
 .faq header h2{
   text-align: center;
   margin: 1rem 0;
@@ -473,7 +481,6 @@ footer p{
   /*background-color: lightgrey;*/
   width: 90%;
   margin: auto;
-  margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
