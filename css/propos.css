@@ -99,9 +99,6 @@ main {
   background: linear-gradient(0deg, var(--blue-logo) 0%, rgba(255,255,255,0) 100%);
 }
 
-
-
-
 .template .nom_entreprise {
   background-color: var(--blue-logo);
   overflow-y: hidden;
@@ -183,7 +180,7 @@ footer{
   color:rgb(56, 53, 53);
   text-align: center;
   background-color: var(--yellow-logo);
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 footer h3 {
@@ -203,8 +200,9 @@ footer p{
 footer a{
   color: var(--text-color);
   text-transform: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  padding: 0 .75rem;
 }
 
 .cursor{
@@ -289,7 +287,7 @@ footer a{
 
   .template .nom_entreprise h2{
     font-size: 2rem;
-  }  
+  }
 
   .template .resume {
     left: 25vw;
