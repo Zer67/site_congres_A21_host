@@ -1,13 +1,15 @@
 $(document).ready(function() {
 
     let httpRequest = new XMLHttpRequest(); // asynchronous request
-    httpRequest.open("GET", "/json", true);
-    httpRequest.send();
-    httpRequest.addEventListener("readystatechange", function() {
-        if (this.readyState === this.DONE) {
-            // when the request has completed
+
+    $.ajax({
+        //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+        url: "/json",
+        success: function (data) {
+            // List all mp4 file names in the page
+            console.log(data);
             let temp = document.createElement("div");
-            temp.innerHTML = this.response;
+            temp.innerHTML = data;
             let files = [];
             for(elem of temp.getElementsByClassName("name")) {
                 if(elem.innerHTML != ".."){
@@ -24,9 +26,9 @@ $(document).ready(function() {
                 createTemplate(file,"container"+(Math.floor(file_count/5)+1).toString());
                 file_count++;
             }
-            
         }
     });
+    
     createTemplate("seekube.json","container1");
     //createTemplate("seekube","container1");
     setupJquery();
