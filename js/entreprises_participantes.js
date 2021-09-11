@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     let httpRequest = new XMLHttpRequest(); // asynchronous request
-    httpRequest.open("GET", "json", true);
+    httpRequest.open("GET", "json/", true);
     httpRequest.send();
     httpRequest.addEventListener("readystatechange", function() {
         if (this.readyState === this.DONE) {
