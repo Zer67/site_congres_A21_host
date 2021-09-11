@@ -27,7 +27,7 @@ $(document).ready(function() {
             
         }
     });
-
+    createTemplate("seekube.json","container1");
     //createTemplate("seekube","container1");
     setupJquery();
 });
