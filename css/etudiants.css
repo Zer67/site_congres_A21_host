@@ -496,7 +496,7 @@ footer a{
   gap: 1.5rem;
 }
 
-.faq-container .question-container{  
+.faq-container .question-container{
   align-self: flex-start;
   flex: 1 1 20rem;
   padding: 2rem;
