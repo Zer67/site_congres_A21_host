@@ -182,6 +182,16 @@ footer a{
   text-align: center;
 }
 
+.calendrier iframe {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 92vw;
+  height: 92vw;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+  border-radius: 0.5rem;
+}
+
 .h3-date{
   padding-left: .5em;
 }
@@ -569,5 +579,10 @@ footer a{
     color: var(--text-color);
     font-size: 1.5rem;
     padding-left: .4rem;
+  }
+
+  .calendrier iframe {
+    width: 50vw;
+    height: 30vw;
   }
 }
